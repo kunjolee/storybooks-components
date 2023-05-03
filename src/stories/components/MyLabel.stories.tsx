@@ -55,10 +55,17 @@ export const Tertiary: Story = {
     }
 }
 
-export const customFontColor: Story = {
+export const CustomFontColor: Story = {
     args: {
         fontColor: '#fc0789',
         size: 'h1'
+    }
+}
+export const CustomBackgroundColor: Story = {
+    args: {
+        fontColor: '#eee',
+        size: 'h1',
+        backgroundColor: '#000'
     }
 }
 
