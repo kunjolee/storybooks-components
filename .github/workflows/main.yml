@@ -1,1 +1,35 @@
 
+name: Semantic release
+
+# el flujo de control se va a disparar cuando se hace un push or pr a main
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/@checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.16.0
+
+      - name: Install Dependencies
+        run: yarn install 
+
+      - name: Build App
+        run: yarn build
+
+      - name: Sematinc release
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
+
+
+      
