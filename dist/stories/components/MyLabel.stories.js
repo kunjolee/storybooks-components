@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CustomBackgroundColor = exports.CustomFontColor = exports.Tertiary = exports.Secondary = exports.AllCaps = exports.Basic = void 0;
-var MyLabel_1 = require("../../components/MyLabel");
+const MyLabel_1 = require("../../components/MyLabel");
 //Necesito exportacion por defecto
-var meta = {
+const meta = {
     title: 'UI/MyLabel',
     component: MyLabel_1.MyLabel,
     tags: ['autodocs'],

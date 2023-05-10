@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Small = exports.Large = exports.Secondary = exports.Primary = void 0;
-var Button_1 = require("./Button");
+const Button_1 = require("./Button");
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-var meta = {
+const meta = {
     title: 'Example/Button',
     component: Button_1.Button,
     tags: ['autodocs'],
