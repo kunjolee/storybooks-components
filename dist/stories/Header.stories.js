@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.LoggedOut = exports.LoggedIn = void 0;
-const Header_1 = require("./Header");
+import { Header } from './Header';
 const meta = {
     title: 'Example/Header',
-    component: Header_1.Header,
+    component: Header,
     // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
     tags: ['autodocs'],
     parameters: {
@@ -12,12 +9,12 @@ const meta = {
         layout: 'fullscreen',
     },
 };
-exports.default = meta;
-exports.LoggedIn = {
+export default meta;
+export const LoggedIn = {
     args: {
         user: {
             name: 'Jane Doe',
         },
     },
 };
-exports.LoggedOut = {};
+export const LoggedOut = {};
