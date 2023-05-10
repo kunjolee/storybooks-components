@@ -1,8 +1,11 @@
-import { MyLabel } from '../../components/MyLabel';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CustomBackgroundColor = exports.CustomFontColor = exports.Tertiary = exports.Secondary = exports.AllCaps = exports.Basic = void 0;
+var MyLabel_1 = require("../../components/MyLabel");
 //Necesito exportacion por defecto
-const meta = {
+var meta = {
     title: 'UI/MyLabel',
-    component: MyLabel,
+    component: MyLabel_1.MyLabel,
     tags: ['autodocs'],
     argTypes: {
         label: { control: 'text' },
@@ -16,15 +19,15 @@ const meta = {
         fontColor: { control: 'color' }
     }
 };
-export default meta;
-export const Basic = {
+exports.default = meta;
+exports.Basic = {
     args: {
         label: 'Agregando valor por defecto',
         size: 'h1',
         allCaps: false //true: capitalizar toda la palabra
     }
 };
-export const AllCaps = {
+exports.AllCaps = {
     args: {
         label: 'por ejemplo aca que estas haciendo',
         size: 'normal',
@@ -32,25 +35,25 @@ export const AllCaps = {
     }
 };
 //primary podria ser por defecto
-export const Secondary = {
+exports.Secondary = {
     args: {
         size: 'normal',
         color: 'secondary', //primary | secondary | tertiary
     }
 };
-export const Tertiary = {
+exports.Tertiary = {
     args: {
         size: 'normal',
         color: 'tertiary',
     }
 };
-export const CustomFontColor = {
+exports.CustomFontColor = {
     args: {
         fontColor: '#fc0789',
         size: 'h1'
     }
 };
-export const CustomBackgroundColor = {
+exports.CustomBackgroundColor = {
     args: {
         fontColor: '#eee',
         size: 'h1',
